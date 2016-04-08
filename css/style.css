@@ -1,0 +1,293 @@
+/* ## Base Styles
+-------------------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #878787;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family:"Source Sans Pro", sans-serif;
+}
+
+/* ## Fonts Styles
+-------------------------------------------------------------------------------- */
+
+/* Default Headings --------------- */
+
+h1,
+h2,
+h3 {
+  line-height:1.2;
+  color:#204056;
+}
+
+h1 {  
+  display:inline-block;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin:0;
+}
+
+h2 {
+  display:block;
+  font-size: 1.28em;
+  font-weight: normal;
+  margin:20px 10px;
+}
+
+h3 {
+  font-size: 1.35em;
+  font-weight:600;
+  line-height: 1.2;
+  color: #444;
+  margin:15px 0;
+}
+
+/* Custom Headings --------------- */
+
+h2.section-title {
+  font-size: 1.8em;
+  border-bottom:1px solid #bebfc1;
+  width:300px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+footer h2 {
+  display:inline-block;
+  font-size:1.2em;
+  font-weight: 600;
+  padding:5px 15px;
+  margin:0;
+}
+
+/* Links --------------- */
+
+a:link,
+a:active,
+a:visited {
+  color: #03A9F4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #47c4fd;
+}
+
+/* Paragraphs --------------- */
+
+p {
+  font-size:1em;
+  margin:0 0 20px;
+}
+
+.intro p,
+.outro p {
+  font-size:1.1em;
+}
+
+/* Micro Styles --------------- */
+
+b {
+  font-weight:800;
+}
+
+/* Text Alignment --------------- */
+
+.center {
+  text-align:center;
+}
+
+/* ## Object Styles
+-------------------------------------------------------------------------------- */
+
+/* Navigation --------------- */
+
+nav {
+  float:right;
+}
+
+nav ul {
+  padding-left:0;
+  margin:0;
+}
+
+nav li {
+  display:inline-block;
+  padding:5px 15px;
+  font-size:1em;
+}
+
+nav li a:link,
+nav li a:active,
+nav li a:visited {
+  color:#204056;
+  outline:none;
+}
+
+nav li a:hover {
+  color:#00BFA5;
+}
+
+/* Images --------------- */
+
+img {
+  max-width: 100%;
+  border-radius:2px;
+}
+
+/* Containers --------------- */
+
+header {
+  position:relative;
+  width:100%;
+  border-bottom:1px solid #E9EAEA;
+  padding:20px;
+  z-index:1000;
+}
+
+section {
+  padding:50px 0;
+}
+
+.container {
+  width:100%;
+  max-width:1024px;
+  padding:0 20px;
+  margin:auto;
+}
+
+footer {
+  border-top:1px solid #E9EAEA;
+  padding:20px;
+}
+
+/* Backgrounds --------------- */
+
+.intro,
+.outro {
+  background-color:#fff;
+}
+
+header,
+footer {
+  background-color:#fff;
+  border-color:#E9EAEA;
+}
+
+.main {
+  background-color:#e9eaea;
+}
+
+/* Columns --------------- */
+
+[class*='col']{
+  float:left;
+  padding:10px;
+}
+
+.col-1-1 {
+  width:100%;
+}
+
+.col-1-2 {
+  width:50%;
+}
+
+.col-1-3 {
+  width:33%;
+}
+
+.col-2-5 {
+  width:40%;
+}
+
+.col-3-5 {
+  width:60%;
+}
+
+.switch-right {
+  float:right;
+}
+
+/* ## Simple Hover Animation
+-------------------------------------------------------------------------------- */
+
+/* Links --------------- */
+
+a {
+  -webkit-transition: all .2s;
+  transition:all .2s;
+}
+
+/* Items --------------- */
+
+.item {
+  box-shadow: 0 0px 5px rgba(0,0,0,0);
+  border-radius:2px;
+  background-color:#fff;
+  padding:15px;
+  -webkit-transition-property:box-shadow,background-color;
+  -webkit-transition-duration:.3s;
+  transition-property:box-shadow,background-color;
+  transition-duration:.3s;
+}
+
+.item:hover {
+  cursor: crosshair;
+  box-shadow: 0 0px 5px rgba(0,0,0,.3);
+}
+
+
+/* ## Media Queries
+-------------------------------------------------------------------------------- */
+
+@media screen and (max-width:1024px) {
+  header nav,
+  header h1 {
+    width:100%;
+    text-align: center;
+  }
+  header nav {
+    padding-top:10px;
+  }
+  .m-col-1-2 {
+    width:50%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .back-to-top {
+    display: none;
+  }
+}
+
+@media screen and (max-width:768px) {
+  nav li {
+    width:100%;
+  }
+  .footer-nav {
+    display:none;
+  }
+  footer h2 {
+    font-size:1em;
+  }
+  .s-col-1-1 {
+    width:100%;
+    text-align: center;
+  }
+}
+
+/* Clearfix
+--------------- */
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
