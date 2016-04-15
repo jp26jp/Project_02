@@ -1,2 +1,2 @@
-# Project_02
-My second project for the Treehouse Techdegree
+# Project 02
+Project 02 for the Treehouse Techdegree.
